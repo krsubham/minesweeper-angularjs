@@ -1,0 +1,10 @@
+{
+  "name": "minesweeper-angularjs",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Minesweeper Game in AngularJS",
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "^1.6.8"
+  }
+}

@@ -1,0 +1,56 @@
+.row {
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+.cell {
+  float: left;
+  width: 40px;
+  height: 40px;
+  line-height: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 2px;
+}
+
+.cell.hidden {
+  background: #ccc;
+  cursor: pointer;
+}
+
+.cell.hidden:hover {
+  background: #eee;
+}
+
+.neighbour-1 {
+  color: blue;
+}
+
+.neighbour-2 {
+  color: green;
+}
+
+.neighbour-3 {
+  color: red;
+}
+
+.neighbour-4 {
+  color: darkblue;
+}
+
+.neighbour-5 {
+  color: darkred;
+}
+
+.neighbour-6 {
+  color: teal;
+}
+
+.neighbour-7 {
+  color: black;
+}
+
+.neighbour-8 {
+  color: darkgray;
+}
