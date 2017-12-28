@@ -34,10 +34,10 @@
 
 <div class="form-group col-md-3">
     <label for="bombsToBePlanted" class="col-md-3">Bombs To be planted:</label>
-    <input id="bombsToBePlanted" type="number" min="2" ng-model="bombsToBePlanted"/>
+    <input id="bombsToBePlanted" type="number" min="1" ng-model="bombsToBePlanted"/>
     <br/>
-    <button ng-click="newGame()">New Game</button>
-    <button ng-click="startGame()">Start Game</button>
+    <button ng-click="newGame()" ng-disabled="!isGameConfigCorrect()">New Game</button>
+    <button ng-click="startGame()" ng-disabled="!isGameConfigCorrect()">Start Game</button>
     <br/>
     <br/>
 

@@ -70,9 +70,7 @@ app.controller('mineCtrl', function ($scope) {
     const showAllCells = function () {
         for (i = 0; i < $scope.HEIGHT; ++i) {
             for (j = 0; j < $scope.WIDTH; ++j) {
-                if (!$scope.board[i][j].isFlagged) {
-                    $scope.board[i][j].isVisible = true;
-                }
+                $scope.board[i][j].isVisible = true;
             }
         }
     };
@@ -176,13 +174,16 @@ app.controller('mineCtrl', function ($scope) {
     };
     // Game Starts!!
     $scope.newGame = function () {
-        $scope.HEIGHT = 0;
-        $scope.WIDTH = 0;
-        $scope.bombsToBePlanted = 0;
+        $scope.HEIGHT = 2;
+        $scope.WIDTH = 2;
+        $scope.bombsToBePlanted = 1;
     };
     $scope.startGame = function () {
         initBoard();
     };
+    $scope.isGameConfigCorrect = function () {
+        return ($scope.HEIGHT >= 2 && $scope.WIDTH >= 2 && $scope.bombsToBePlanted >= 1);
+    }
 });
 
 app.directive('ngRightClick', function ($parse) {
