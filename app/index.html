@@ -44,6 +44,7 @@
     <div id="gameGrid">
         <div class="row" ng-repeat="row in board track by $index">
             <div class="cell" ng-repeat="cell in row track by $index" ng-class="{hidden: !cell.isVisible}"
+                 title="Right Click to place/remove a flag on a cell.&#10;Left Click to reveal the cell."     
                  ng-click="showCell(cell)"
                  ng-right-click="flagTheCell(cell)">
                 <div ng-show="cell.isVisible && !cell.hasBomb" class=neighbour-{{cell.faceValue}}>{{cell.faceValue}}</div>
