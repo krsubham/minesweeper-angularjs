@@ -36,8 +36,8 @@
     <label for="bombsToBePlanted" class="col-md-3">Bombs To be planted:</label>
     <input id="bombsToBePlanted" type="number" min="1" ng-model="bombsToBePlanted"/>
     <br/>
-    <button ng-click="newGame()" ng-disabled="!isGameConfigCorrect()">New Game</button>
-    <button ng-click="startGame()" ng-disabled="!isGameConfigCorrect()">Start Game</button>
+    <button ng-click="newGame()" title="Min Height=2 AND Min Width=2 AND Min Bombs=1" ng-disabled="!isGameConfigCorrect()">New Game</button>
+    <button ng-click="startGame()" title="Min Height=2 AND Min Width=2 AND Min Bombs=1" ng-disabled="!isGameConfigCorrect()">Start Game</button>
     <br/>
     <br/>
 
