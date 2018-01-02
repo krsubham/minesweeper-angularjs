@@ -47,10 +47,11 @@
                  title="Right Click to place/remove a flag on a cell.&#10;Left Click to reveal the cell."     
                  ng-click="showCell(cell)"
                  ng-right-click="flagTheCell(cell)">
-                <div ng-show="cell.isVisible && !cell.hasBomb" class=neighbour-{{cell.faceValue}}>{{cell.faceValue}}</div>
-                <div ng-show="cell.isVisible && cell.hasBomb"><i class="fa fa-bomb" aria-hidden="true"></i></div>
-                <div ng-show="!cell.isVisible && cell.isFlagged"><i class="fa fa-flag" aria-hidden="true"></i></div>
-
+                <div class="cell-content">
+                    <div ng-show="cell.isVisible && !cell.hasBomb" class=neighbour-{{cell.faceValue}}>{{cell.faceValue}}</div>
+                    <div ng-show="cell.isVisible && cell.hasBomb"><i class="fa fa-bomb" aria-hidden="true"></i></div>
+                    <div ng-show="!cell.isVisible && cell.isFlagged"><i class="fa fa-flag" aria-hidden="true"></i></div>
+                </div>
             </div>
         </div>
     </div>
